@@ -91,6 +91,7 @@
 }
 
 #map {
+	float: right;
 	display: inline-block;
 	text-align: center;
 	background: rgba(0, 0, 0, .5);
@@ -100,6 +101,11 @@
 	width: 100%;
 }
 
+#wrapper {
+    width: 500px;
+    border: 1px solid black;
+   
+}
 
 .intro {
 	width: 500px;
@@ -150,26 +156,31 @@ body {
   text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
 }
 .lineOne {
+	float: left;
   transition-delay:.5s; 
   transition:.7s ease in;
   animation: txtFlyIn .5s linear;
 }
 .lineTwo {
+	float: left;
     transition-delay:.7s; 
     transition:.9s ease in;
     animation: txtFlyIn .9s linear;
 }
 .lineThree {
+	float: left;
     transition-delay:1s; 
     transition:1.2s ease in;
     animation: txtFlyIn 1.3s linear;
 }
 .lineOne, .lineTwo, .lineThree {
+	float: left;
     font-size:110px;
     font-weight: bold;
     letter-spacing: 3px;
   }
 .lineFour {
+	float: left;
     transition-delay:2.5s; 
     transition:2.5s ease in;
     animation: fadeIn 2.5s linear;
@@ -179,8 +190,8 @@ body {
     color:#000;
     box-size:border-box;
     max-width:63%;
-    max-width: 22em;
-    font-size: 32px;
+    max-width: 20em;
+    font-size: 28px;
     padding: .2em .5em;
     margin-top: 30px;
 }
@@ -195,6 +206,7 @@ body {
 
 
 #map {
+	float: right;
 	opacity: .97;
 	width: 1200px;
 	height: 600px;
