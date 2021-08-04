@@ -39,13 +39,6 @@
 </div>
 </div>
 
-<br><br><br>
-
-<div class = "title">
-	<h3 style = "text-align:center">RESTAURANT INSPECTION MAP</h3>
-</div>
-
-<br>
 
 <div id = "map">
 </div>
@@ -81,9 +74,12 @@ $.getJSON("foodinspections.geojson",function(data){
 
 $.getJSON("boundary.geojson", function(data){
 	L.geoJSON(data,{
-
-	})
-}
+		pointToLayer: function(feature, latlng) {
+			var polyColor
+			var poly = feature.properties.objectid;
+			if ( objectid == "1" ) resultsColor = "black";
+			else resultsColor = "black";
+				}}).addTo(map);
 
 
 </script>
