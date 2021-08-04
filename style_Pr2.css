@@ -92,7 +92,7 @@
 
 #map {
 	display: inline-block;
-	text-align: right;
+	text-align: center;
 	background: rgba(0, 0, 0, .5);
 	background-clip: padding-box;
 	padding: 15px;
@@ -193,7 +193,7 @@ body {
     100% { transform:translateX(0%); }
 }
 
-@keyframes1 move_wave {
+@keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
     }
@@ -261,16 +261,6 @@ body {
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
-}
-
-#map {
-	opacity: .97;
-	width: 1200px;
-	height: 600px;
-	margin: auto;
-	padding: 10px;
-	border-width: 10px;
-	border-color: gray;
 }
 
 
