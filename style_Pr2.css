@@ -149,18 +149,18 @@
 }
 .lineOne {
   transition-delay:.5s; 
-  transition:.7s ease in;
+  transition:.5s ease in;
   animation: txtFlyIn .5s linear;
 }
 .lineTwo {
-    transition-delay:.7s; 
+    transition-delay:.9s; 
     transition:.9s ease in;
     animation: txtFlyIn .9s linear;
 }
 .lineThree {
-    transition-delay:1s; 
+    transition-delay:1.2s; 
     transition:1.2s ease in;
-    animation: txtFlyIn 1.3s linear;
+    animation: txtFlyIn 1.2s linear;
 }
 .lineOne, .lineTwo, .lineThree {
     font-size:110px;
@@ -168,9 +168,9 @@
     letter-spacing: 3px;
   }
 .lineFour {
-    transition-delay:2.5s; 
-    transition:2.5s ease in;
-    animation: fadeIn 2.5s linear;
+    transition-delay:2s; 
+    transition:2s ease in;
+    animation: fadeIn 2s linear;
     width: 100%;
     background-color:rgba(255,255,255,0.9);
     display:inline-block;
