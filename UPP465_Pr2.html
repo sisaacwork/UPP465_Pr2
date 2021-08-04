@@ -83,6 +83,27 @@ var CyclOSM = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}
 	attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+$.getJSON("foodinspections.geojson",function(data){
+	L.geoJSON(data,{
+		pointToLayer: function(feature, latlng) {
+			var resultsColor
+			var Results = feature.properties.Results;
+			if ( Results == "Fail" ) resultsColor = "red";
+			else resultsColor = "green";
+			return new L.CircleMarker(latlng,
+				{			radius: 2,
+							fillOpacity: 1,
+							fillColor: resultsColor,
+							color: 'red',
+							weight: .5
+				});
+		},
+		onEachFeature: function(feature, layer){
+				layer.bindPopup("<strong>" + feature.properties.DBA_Name + "</strong><br/>" + "Risk Level:" + "" + feature.properties.Risk + "<br/>" + "Address:" + "" + feature.properties.Address + "<br/>" + "Inspection Date:" + "" + feature.properties.Inspection_Date)
+		}
+				}).addTo(map);
+});
+
 
 </script>
 
