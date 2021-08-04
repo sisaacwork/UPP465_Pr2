@@ -94,12 +94,12 @@ $.getJSON("foodinspections.geojson",function(data){
 				{			radius: 2,
 							fillOpacity: 1,
 							fillColor: resultsColor,
-							color: 'red',
+							color: 'white',
 							weight: .5
 				});
 		},
 		onEachFeature: function(feature, layer){
-				layer.bindPopup("<strong>" + feature.properties.DBA_Name + "</strong><br/>" + "Risk Level:" + "" + feature.properties.Risk + "<br/>" + "Address:" + "" + feature.properties.Address + "<br/>" + "Inspection Date:" + "" + feature.properties.Inspection_Date)
+				layer.bindPopup("<strong>" + feature.properties.DBA_Name + "</strong><br/>" + feature.properties.Results + "<br/>" + "Risk Level: " + "" + feature.properties.Risk + "<br/>" + "Address: " + "" + feature.properties.Address + "<br/>" + "Inspection Date: " + "" + feature.properties.Inspection_Date)
 		}
 				}).addTo(map);
 });
