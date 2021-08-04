@@ -91,7 +91,7 @@
 }
 
 #map {
-	display: inline-block;
+	display: block;
 	text-align: center;
 	background: rgba(0, 0, 0, .5);
 	background-clip: padding-box;
