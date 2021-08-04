@@ -78,17 +78,9 @@ var CyclOSM = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}
 }).addTo(map);
 
 $.getJSON("Aeropuertos.geoJson",function(data){
-	L.geoJson(data, {
-		pointToLayer: function(feature, latlng) {
-			return new L.CircleMarker(latlng,
-				{ radius: 5,
-					fillOpacity: 1,
-					fillColor: '##FF6600'});
-		}, onEachFeature: function(feature, layer){layer.bindPopup(feature.properties.APname)
-					}
+	L.geoJson(data) 
 		
 	}).addTo(map);
-});
 
 </script>
 
