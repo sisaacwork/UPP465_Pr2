@@ -1,5 +1,7 @@
 
 .title{
+	display: inline-block;
+	justify-content: right;
 	animation: fadeIn;
 	animation-duration: 4s;
 	line-height: 0.2;
