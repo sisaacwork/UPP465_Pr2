@@ -149,13 +149,12 @@ body {
 
 
 #map {
-	margin: auto;
 	opacity: .97;
 	width: 1350px;
 	height: 600px;
 	margin: auto;
 	padding: 10px;
-	border-width: 10px;
+	border-width: 100px;
 	border-color: gray;
 }
 
